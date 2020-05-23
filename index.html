@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Healthcare factors visualizations</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/d3Style.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <a class="navbar-brand" href="index.html">D3 Times - Healthcare factors visualizations in US</a>
+    </nav>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12  col-md-12">
+                <div id="scatter">
+                    <!-- We append our chart here. -->
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12  col-md-12">
+                <div class="article">
+                    <h3>Visualizations Between Healthcare Markers Vs Income and Age</h3>
+                    <br>
+                    <p>The data set used for this visualization is from U.S. Census Bureau and the Behavioral Risk Factor Surveillance System based on 2014 ACS 1-year estimates.</p>
+
+                    <p>We can see two clear outliers in the scatter plot of poverty vs lack of healthcare, i.e. Texas and Massachusetts. Texas has a poverty rate of 17.2 % and 24.9 % lack in healthcare whereas Massachusetts has a poverty rate of 11.6 % with
+                        4.6% lack in healthcare. <br> Also, as a comparison between Texas and Washington D.C, we can see that even though the poverty % in these states is almost identical, Texas lacks healthcare a lot more. It would be interesting to
+                        do additional research on this matter in terms of any health care reforms planned/implemented in these states.<br>We cannot draw any positive or negative correlation between poverty% and lack in healthcare, given that states such
+                        as Alaska, Hawaii, Massachusetts, Minnesota, North Dakota, Utah, Virginia and Wyoming have almost the same poverty rate (~11%), but the lack in healthcare between these states ranges from 4%-15%.</p>
+
+                    <p>In the scatter plot of age vs lack of healthcare, we see that most of the states lack healthcare in 36-40 age range. Again, as a comparison between Texas and Washington D.C, we can see that even though the median age (~34) in these
+                        states is very identical, Texas is trailing behind in healthcare. It could be because, the median household income in Washington D.C is about 33% more as compared to Texas, which is visible in the scatter plot between household
+                        income and lack in healthcare%, and hence people can spend more towards healthcare.</p>
+
+                    <p>When we shift the view to see a correlation between poverty level vs Obesity%, we see that states with higher poverty% tend to have higher Obesity. Mississippi, with the highest level of poverty also has the highest Obesity%, whereas
+                        Hawaii, with a lower poverty level have a fitter population, with less obesity%. </p>
+
+                    <p>Some correlation is also observed between Household income vs Smokers%, we see that states where the median household income is more, those tend to have less smokers as compared to states that have less household income. Similar kind
+                        of correlation is observed between Household income vs Obesity%. With the increase in household income, obesity% decreases.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer-->
+    <div id="footer">
+        <p>Smiti Swain&copy;2020</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+
+</body>
+
+</html>
